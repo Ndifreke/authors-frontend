@@ -19,7 +19,7 @@ export const request = async ({ url, method, data, headers }, isAuthorsHeaven = 
   // url = `http://localhost:3000${p}`;
   // // console.log(url, method, localStorage.getItem("token"));
   if (isAuthorsHeaven) {
-    url = `https://inception-ah-backend.herokuapp.com${url}`;
+    url = `https://incept-backend.herokuapp.com${url}`;
   }
   try {
     const response = await axios({ method, url, data, headers });
